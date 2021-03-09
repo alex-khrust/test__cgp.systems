@@ -1,0 +1,74 @@
+.trial
+  width: auto
+  height: auto
+  padding: 40px 0
+  background: url(../img/dist/bg-trial.jpg) no-repeat 100% center
+  background-size: cover
+  .inner
+    width: 100%
+    display: grid
+    align-items: center
+    justify-content: center
+    flex-flow: wrap
+    gap: 110px 30px
+    @media ( min-width: 768px )
+      grid-auto-flow: column
+      grid-auto-columns: 1fr 1fr
+      justify-content: normal
+
+
+.box
+  max-width: 505px
+  @media ( min-width: 768px )
+    max-width: 450px
+  &__icon
+    width: 60px
+    height: 60px
+    margin-bottom: 20px
+    object-fit: contain
+  &__title
+    margin-bottom: 1px
+    font-family: Proxima Nova Semibold
+    font-weight: 600
+    font-size: 24px
+    line-height: 150%
+    color: #181F48
+  &__desc
+    color: #7B7E92
+
+.login__form,
+.trial__form
+  width: 100%
+  height: auto
+  max-width: 505px
+  padding: 20px
+  margin: -80px 0
+  background: #FFFFFF
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.04), 0px 0px 2px rgba(0, 0, 0, 0.06), 0px 0px 1px rgba(0, 0, 0, 0.04)
+  border-radius: 10px
+  justify-self: end
+  @media ( min-width: 505px )
+    padding: 30px
+  @media ( min-width: 768px )
+    max-width: 505px
+  label
+    display: block
+    span
+      font-size: 18px
+      line-height: 28px
+      color: #A5A9C0
+  input
+    width: 100%
+    height: 57px
+    max-width: 445px
+    margin: 10px 0 20px
+    display: flex
+    flex-direction: row
+    align-items: center
+    padding: 15px
+    border: 1px solid #E3E8E9
+    box-sizing: border-box
+    border-radius: 7px
+    font-size: 18px
+    &::placeholder
+      color: #DBDADA

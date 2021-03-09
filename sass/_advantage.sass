@@ -1,0 +1,48 @@
+.advantage
+  padding: 40px 0
+  @media ( min-width: 768px )
+    padding: 60px 0
+  .inner
+    margin: 0 auto
+    align-items: center
+    justify-content: center
+    display: grid
+    grid-auto-flow: row
+    gap: 20px 45px
+    @media ( min-width: 768px )
+      grid-auto-flow: column
+      gap: 30px 45px
+  &__title
+    max-width: 505px
+    font-family: Proxima Nova Semibold
+    font-style: normal
+    font-weight: 600
+    font-size: 24px
+    line-height: 150%
+    display: flex
+    align-items: center
+    color: #181F48
+    @media ( min-width: 768px )
+      max-width: 330px
+  &__list
+    max-width: 505px
+    display: grid
+    gap: 15px
+    font-size: 18px
+    line-height: 150%
+    @media ( min-width: 768px )
+      max-width: 443px
+      gap: 25px
+    li
+      padding-left: 29px
+      position: relative
+      &:before
+        content: ''
+        position: absolute
+        left: 0
+        top: 7px
+        width: 12px
+        height: 12px
+        background: #1FCA3E
+        border-radius: 50%
+        overflow: hidden

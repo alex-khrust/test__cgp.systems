@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width" , initial-scale=1, maximum-scale=3>
+	<meta name="description" content="Тестовое задание HTML/CSS developer">
+	<meta property="og:type" content="website">
+	<meta property="og:title" content="Тестовое задание HTML/CSS developer">
+	<meta property="og:site_name" content="Тестовое задание HTML/CSS developer">
+	<meta property="og:url" content="">
+
+	<meta property="og:image" content="img/dist/preview.jpg">
+	<link rel="icon" href="img/favicon.png">
+
+	<title>Тестовое задание HTML/CSS developer</title>
+
+	<link rel="stylesheet" href="css/app.min.css">
+</head>
+
+<body>
+
+	<header class="header">
+		<div class="container">
+			<a class="header__logo" href="#">
+				<img src="img/dist/logo.svg" alt="logo">
+			</a>
+			<div class="header__mobile">
+				<div class="inner">
+					<nav class="header__nav">
+						<ul class="menu">
+							<li class="menu__item dropdown">
+								<a href="#">Features</a>
+								<ul class="sub__menu">
+									<li class="menu__item"><a href="#">Features</a></li>
+									<li class="menu__item"><a href="#">About</a></li>
+									<li class="menu__item"><a href="#">Pricing</a></li>
+									<li class="menu__item"><a href="#">Blog</a></li>
+									<li class="menu__item"><a href="#">Contact Us</a></li>
+								</ul>
+							</li>
+							<li class="menu__item"><a href="#">About</a></li>
+							<li class="menu__item"><a href="#">Pricing</a></li>
+							<li class="menu__item"><a href="#">Blog</a></li>
+							<li class="menu__item"><a href="#">Contact Us</a></li>
+						</ul>
+					</nav>
+					<div class="header__btns">
+						<button class="btn btn-trans login-open" type="button">login</button>
+						<button class="btn btn-blue start-trial-btn" type="button">Start Free Trial</button>
+					</div>
+				</div>
+			</div>
+			<div class="hamburger">
+				<span></span>
+				<span></span>
+				<span></span>
+			</div>
+		</div>
+	</header>
+	<!-- /.header -->
+
+	<main class="content">
+
+		<section class="hero">
+			<div class="container">
+				<div class="hero__title">
+					<h1 class="title">Welcome to your presonal SMS Dashboard</h1>
+					<p class="desc">Tempor minim anim eiusmod occaecat eu. In labore veniam incididunt mollit commodo nostrud non
+						ex occaecat occaecat deserunt magna quis veniam.</p>
+					<div class="hero__btns">
+						<button class="btn btn-blue start-trial-btn" type="button">Start Free Trial</button>
+						<button class="btn btn-white discover-btn" type="button">Discover</button>
+					</div>
+				</div>
+				<blockquote class="speech-left">
+					<p>Eiusmod irure ullamco eiusmod mollit ex qui. Mollit veniam tempor amet veniam eiusmod aute. Proident minim
+						ad exercitation qui...</p>
+				</blockquote>
+				<blockquote class="speech-right">
+					<p>Eiusmod irure ullamco eiusmod mollit ex qui. Mollit veniam tempor amet veniam eiusmod aute. Proident minim
+						ad exercitation qui...</p>
+				</blockquote>
+			</div>
+		</section>
+		<!-- /.hero -->
+
+		<section class="advantage">
+			<div class="container">
+				<div class="inner">
+					<h2 class="advantage__title">Nisi ad voluptate laboris dolor deserunt adipisicing ea amet mollit commodo
+						voluptate aute adipisicing. Anim minim do exercitation id.</h2>
+					<ol class="advantage__list">
+						<li>Nisi ad voluptate laboris dolor deserunt adipisicing ea amet mollit commodo voluptate aute adipisicing.
+						</li>
+						<li>Nisi ad voluptate laboris dolor deserunt adipisicing.</li>
+						<li>Nisi ad voluptate laboris dolor deserunt.</li>
+					</ol>
+				</div>
+			</div>
+		</section>
+		<!-- /.advantage -->
+
+		<section class="trial">
+			<div class="container">
+				<div class="inner">
+					<div class="box">
+						<img class="box__icon" src="img/dist/account.svg" alt="account icon">
+						<h3 class="box__title">Set up FREE Trial Account</h3>
+						<p class="box__desc">Duis pariatur ullamco Lorem magna duis Lorem. Nisi quis sit Lorem cupidatat eiusmod ad
+							et anim commodo dolor id voluptate cupidatat. Dolore ut excepteur enim tempor.</p>
+					</div>
+					<form class="trial__form" id="trial__form" action="" method="POST">
+						<label>
+							<span>Your Email</span>
+							<input class="email" name="email" type="email" autocomplete="email" required
+								placeholder="Write here your email address" aria-label="Write here your email address">
+						</label>
+						<label>
+							<span>Your Phone number</span>
+							<input class="phone" name="tel" type="tel" autocomplete="tel" required
+								placeholder="Write here your phone address" aria-label="Write here your phone address" minlength="10">
+						</label>
+						<button class="btn btn-blue" type="submit">Start Free Trial</button>
+					</form>
+				</div>
+			</div>
+		</section>
+		<!-- /.trial -->
+
+		<section class="present">
+			<div class="container">
+				<div class="inner">
+					<div class="card-links">
+						<ul class="card-links__list">
+							<li class="card-links__item">
+								<img src="img/dist/card-links-1.jpg" alt="Contact owner photo" class="card-links__photo">
+								<span class="card-links__name">Brandie Warren</span>
+								<p class="card-links__text">Sunt mollit dolor sunt non cillum pari Lorem ipsum dolor sit amet.</p>
+							</li>
+							<li class="card-links__item">
+								<img src="img/dist/card-links-2.jpg" alt="Contact owner photo" class="card-links__photo">
+								<span class="card-links__name">Wade Wilson</span>
+								<p class="card-links__text">Sunt mollit dolor sunt non cillum pari Lorem ipsum dolor sit amet.</p>
+							</li>
+						</ul>
+						<div class="card-links__btns">
+							<button class="btn btn-green" type="button">Create New Message</button>
+							<button class="btn btn-light-grey" type="button">Archive</button>
+						</div>
+					</div>
+					<div class="box">
+						<img class="box__icon" src="img/dist/phone.svg" alt="phone icon">
+						<h3 class="box__title">Outbound SMS</h3>
+						<p class="box__desc">Create and store templates for messages you send on a regular basis. Duis pariatur
+							ullamco Lorem magna duis Lorem.</p>
+					</div>
+					<div class="box">
+						<img class="box__icon" src="img/dist/sms.svg" alt="sms icon">
+						<h3 class="box__title">Send SMS</h3>
+						<p class="box__desc">Send the same message to multiple recipients in one scheduled event. If you want to
+							send multiple messages to multiple recepients in one event, please use the bulk upload option in the main
+							menu.</p>
+					</div>
+					<div class="mailing">
+						<div class="mailing__header">
+							<div class="mailing__link">
+								<img src="img/dist/mailing-links-1.jpg" alt="Contact owner photo" class="card-links__photo">
+								<span class="card-links__name">Ronald Simmmons</span>
+							</div>
+							<div class="mailing__btns">
+								<button class="btn btn-light-grey" type="button">Select</button>
+								<button class="btn btn-green btn-icon" type="button">
+									<svg width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+										<path
+											d="M6.56247 13.209V16.6875C6.56247 16.9305 6.71847 17.1457 6.94947 17.2222C7.00722 17.241 7.06647 17.25 7.12497 17.25C7.30047 17.25 7.46997 17.1675 7.57797 17.0205L9.61271 14.2515L6.56247 13.209Z"
+											fill="white" />
+										<path
+											d="M17.7634 0.103645C17.5909 -0.0186049 17.3644 -0.0351049 17.1769 0.0631451L0.301917 8.87565C0.102417 8.9799 -0.0153329 9.1929 0.00116715 9.41715C0.0184172 9.64215 0.167667 9.83415 0.379918 9.9069L5.07117 11.5104L15.0619 2.9679L7.33092 12.2821L15.1932 14.9694C15.2517 14.9889 15.3132 14.9994 15.3747 14.9994C15.4767 14.9994 15.5779 14.9716 15.6672 14.9176C15.8097 14.8306 15.9064 14.6844 15.9312 14.5201L17.9937 0.645145C18.0244 0.435145 17.9359 0.226645 17.7634 0.103645Z"
+											fill="white" />
+									</svg>
+								</button>
+							</div>
+						</div>
+						<ul class="mailing__list">
+							<li class="mailing__item">
+								<p>Culpa pariatur minim eiusmod mollit qui. Dolore reprehenderit duis sint aliqua do magna pariatur ad
+									reprehenderit laborum veniam consequat.</p>
+							</li>
+							<li class="mailing__item">
+								<p>Culpa pariatur minim eiusmod mollit qui. Dolore reprehenderit duis sint aliqua do magna pariatur ad
+									reprehenderit laborum veniam consequat.</p>
+							</li>
+							<li class="mailing__item">
+								<p>Culpa pariatur minim eiusmod mollit qui. Dolore reprehenderit duis sint aliqua do magna pariatur ad
+									reprehenderit laborum veniam consequat.</p>
+							</li>
+						</ul>
+					</div>
+				</div>
+			</div>
+		</section>
+		<!-- /.foo -->
+
+	</main>
+	<!-- /.content -->
+
+	<div class="popup__login">
+		<div class="popup__content">
+			<form class="login__form" id="login__form" action="" method="POST">
+				<div class="login__form-header">
+					<span class="title">Log in to your account</span>
+					<div class="hamburger cross">
+						<span></span>
+						<span></span>
+						<span></span>
+					</div>
+				</div>
+				<label>
+					<span>Your Email</span>
+					<input class="email" name="email" type="email" autocomplete="email" required
+						placeholder="Write here your email address" aria-label="Write here your email address">
+				</label>
+				<label>
+					<span>Your Password</span>
+					<input class="password" name="password" type="password" autocomplete="tel" required
+						placeholder="Write here your password" aria-label="Write here your password">
+				</label>
+				<button class="btn btn-blue" type="submit">Login</button>
+			</form>
+		</div>
+	</div>
+	<!-- .overlay -->
+	<div class="overlay"></div>
+	<!-- /.overlay -->
+
+	<script src="js/app.min.js"></script>
+	<script src="js/app.js"></script>
+
+</body>
+
+</html>

@@ -1,0 +1,96 @@
+// USER VARIABLES SECTION
+
+$accent: orange // Accent Color
+$fontsize: 16px // Body Font Size
+$textcolor: #A5A9C0 // Text Color
+$blue-bg: #305DFB
+$lineheight: 1.3 // Document Line Height
+$userfont: Proxima Nova Regular, Roboto, Helvetica, Arial, sans-serif // User Font Family
+$systemfont: -apple-system, BlinkMacSystemFont, Arial, sans-serif // System Font Family
+
+// IMPORT SECTION
+
+@import '../../node_modules/tailwindcss/dist/tailwind.min.css' // tailwind
+
+// FONTS LOAD SECTION
+
+@mixin font($fname, $fstyle, $fweight, $furl)
+	@font-face
+		font-family: $fname, Roboto, Helvetica, Arial, sans-serif
+		font-style: $fstyle
+		font-weight: $fweight
+		src: url($furl) format('woff2')
+
+@include font('Proxima Nova Regular', normal, 400, '../fonts/ProximaNova-Regular.woff2')
+@include font('Proxima Nova Bold', normal, 700, '../fonts/ProximaNova-Bold.woff2')
+@include font('Proxima Nova Semibold', normal, 900, '../fonts/ProximaNova-Semibold.woff2')
+
+// GENERAL DOCUMENT STYLES
+
+::placeholder
+	color: #666
+
+::selection
+	background-color: $accent
+	color: #fff
+
+input, textarea
+	outline: none
+	&:focus:required:invalid
+		border-color: red
+	&:required:valid
+		border-color: green
+
+body
+	font-family: $userfont
+	font-size: $fontsize
+	font-weight: 400
+	line-height: $lineheight
+	color: $textcolor
+	min-width: 320px
+	position: relative
+	overflow-x: hidden
+
+.container
+	max-width: 1130px
+	display: flex
+	margin: 0 auto
+	padding: 0 15px
+
+a.btn,
+button.btn
+	width: auto
+	height: 100%
+	max-height: 52px
+	padding: 10px 20px
+	display: flex
+	align-items: center
+	justify-content: center
+	white-space: nowrap
+	border-radius: 32px
+	overflow: hidden
+
+button,
+a
+	transition: .3s
+	-webkit-appearance: none
+	-moz-appearance: none
+
+a:hover
+	color: $blue-bg
+
+.btn-trans
+	&:hover
+		color: $blue-bg
+
+.btn-white
+	background: #fff
+	color: $blue-bg
+	&:hover
+		background: darken(#fff, 15%)
+
+.btn-blue
+	background: $blue-bg
+	color: #fff
+	&:hover
+		background: darken($blue-bg, 15%)
