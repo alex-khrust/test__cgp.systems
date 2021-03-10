@@ -23,6 +23,7 @@ document.addEventListener('DOMContentLoaded', () => {
 		if (!$('.sub__menu').is(e.target)
 			&& $('.sub__menu').has(e.target).length === 0) {
 			$('.sub__menu').removeClass('open');
+			$('body').removeClass('locked');
 		}
 	});
 
